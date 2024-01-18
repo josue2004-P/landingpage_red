@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capacitacion</title>
+    <title>CertusHack</title>
+    <link rel="icon" href="./IMAGENES/logo.png" type="image/png">
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -13,10 +15,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
     <style>
       body {
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
+        font-family: "Oswald";
       }
     </style>
   </head>
@@ -24,7 +29,7 @@
   <body class="bg-black">
     <!-- 1 -->
     <header>
-      <div href="#inicio"  class="logo console-text h-10 flex ">
+      <div href="#inicio" class="logo console-text h-10 flex">
         <span id="text"></span>
         <div class="console-underscore" id="console">&#95;</div>
       </div>
@@ -136,19 +141,17 @@
                 <h1
                   class="h-[10%] uppercase text-[2.5rem] font-bold text-center my-[1.7rem] text-[#8A0026]"
                 >
-                  Hacking <br />
+                  Tecnologia en campaña lectoral <br />
                 </h1>
                 <p id="parrafo">
-                  * Ciberespionaje <br />
-                  * Hacking de perfiles de <br />
-                  FB/IG/X. <br />
-                  * Ataques de denegacion <br />
-                  de servicio a aplicaciones <br />
-                  wed
+                  * Manejo de redes sociales<br />
+                  * Estrategias digitales <br />
+                  * Creacion de sitio o blog <br />
+                  * Creacion de aplicacion movil <br />
                 </p>
                 <div>
                   <button
-                    onclick="location.href='servicios10.html'"
+                    onclick="location.href='menu4.html'"
                     class="leer-mas-btn"
                   >
                     Leer más...
@@ -158,43 +161,73 @@
             </div>
           </div>
         </div>
-
-      </div>
-      <div class="swiper-button-next w-20 pl-4">
-        <div  class="text-[#8A0026] font-extrabold">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-20 h-20"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m8.25 4.5 7.5 7.5-7.5 7.5"
-            />
-          </svg>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="card">
+              <div class="content">
+                <h1
+                  class="h-[10%] uppercase text-[2.5rem] font-bold text-center my-[1.7rem] text-[#8A0026]"
+                >
+                  Equipo de computo y abquisicion de tecnologia <br />
+                </h1>
+                <p id="parrafo">
+                  * Computo<br />
+                  * Switch <br />
+                  * Firewalls <br />
+                  * Cable Ethernet <br />
+                  * Escritorios <br />
+                </p>
+                <div>
+                  <button
+                    onclick="location.href='menu5.html'"
+                    class="leer-mas-btn"
+                  >
+                    Leer más...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="swiper-button-prev w-20 pr-4">
-        <div  class="text-[#8A0026] font-extrabold">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-20 h-20 font-extrabold"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
-            />
-          </svg>
-        </div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev absolute w-[3rem] h-[5rem] z-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-left text-[#8A0026]"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M5 12l6 6" />
+          <path d="M5 12l6 -6" />
+        </svg>
+      </div>
+      <div class="swiper-button-next absolute w-[3rem] h-[5rem] z-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-right text-[#8A0026]"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill=""
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M13 18l6 -6" />
+          <path d="M13 6l6 6" />
+        </svg>
       </div>
     </div>
 
@@ -211,7 +244,6 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-
         //cuantas quieres ver
         slidesPerView: 3,
         grid: {
