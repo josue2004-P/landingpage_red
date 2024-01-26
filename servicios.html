@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CertusHack</title>
+    <link rel="icon" href="./IMAGENES/logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div id="particles-js"></div>
+  <body class="">
+    <header>
+      <nav class=" px-4 lg:px-6 py-2.5 relative">
+        <div
+          class="flex flex-wrap justify-between flex-row-reverse lg:flex-row items-center"
+        >
+          <div class="flex items-center lg:order-2">
+            <button
+              id="toggleButton"
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="">
+            <!-- typing -->
+            <div class="w-20">
+              <div class="logo console-text h-10 flex">
+                <span class="text-3xl" id="text"></span>
+                <div class="console-underscore" id="console">&#95;</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden absolute lg:static top-0 left-0 mt-16 lg:mt-0  justify-between uppercase text-2xl items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-2 pr-4 pl-3 text-gray-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="servicios.html"
+                  class="block py-2 pr-4 pl-3 text-gray-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="block py-2 pr-4 pl-3 text-gray-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="block py-2 pr-4 pl-3 text-gray-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contactanos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- agregas un swiper-slide para agregar otra card -->
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="card">
+              <div class="content relative h-full">
+                <h1
+                  class="text-center mb-10 uppercase text-3xl font-bold pt-5 text-[#8A0026]"
+                >
+                  Ciberinteligencia en campaña electoral
+                </h1>
+                <div class="text-start text-lg text-gray-100 font-medium px-5">
+                  <p>* OSINT</p>
+                  <p>* Investigacion de personas / redes sociales</p>
+                  <p>* Identificaciones falsas de perfiles falsos</p>
+                  <p>* WhatsApp Init</p>
+                </div>
+
+                <div class="absolute bottom-0 flex justify-center w-full">
+                  <button
+                    onclick="location.href='./src/menu/menuCiberinteligencia.html'"
+                    class="text-lg font-medium text-gray-100 border border-white rounded-full px-3 py-1 mb-5"
+                  >
+                    Leer más...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="card">
+              <div class="content relative h-full">
+                <h1
+                  class="text-center mb-10 uppercase text-3xl font-bold pt-5 text-[#8A0026]"
+                >
+                  Ciberseguridad
+                </h1>
+                <div class="text-start text-lg text-gray-100 font-medium px-5">
+                  <p>* Creacion de infraestructura TI</p>
+                  <p>* Proteccion de datos</p>
+                  <p>* Seguridad de sistemas y redes</p>
+                  <p>* Seguridad en redes sociales</p>
+                </div>
+
+                <div class="absolute bottom-0 flex justify-center w-full">
+                  <button
+                    onclick="location.href='./src/menu/menuCiberseguridad.html'"
+                    class="text-lg font-medium text-gray-100 border border-white rounded-full px-3 py-1 mb-5"
+                  >
+                    Leer más...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="card">
+              <div class="content relative h-full">
+                <h1
+                  class="text-center mb-10 uppercase text-3xl font-bold pt-5 text-[#8A0026]"
+                >
+                  Hacking
+                </h1>
+                <div class="text-start text-lg text-gray-100 font-medium px-5">
+                  <p>* Ciberespionaje</p>
+                  <p>* Hacking de perfiles de FB/IG/X.</p>
+                  <p>* Ataques de denegacion de servicio a aplicaciones web</p>
+                </div>
+
+                <div class="absolute bottom-0 flex justify-center w-full">
+                  <button
+                    onclick="location.href='./src/menu/menuHacking.html'"
+                    class="text-lg font-medium text-gray-100 border border-white rounded-full px-3 py-1 mb-5"
+                  >
+                    Leer más...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="card">
+              <div class="content relative h-full">
+                <h1
+                  class="text-center mb-10 uppercase text-3xl font-bold pt-5 text-[#8A0026]"
+                >
+                  Tecnologia en campaña lectoral
+                </h1>
+                <div class="text-start text-lg text-gray-100 font-medium px-5">
+                  <p>* Manejo de redes sociales</p>
+                  <p>* Estrategias digitales.</p>
+                  <p>* Creacion de sitio o blog</p>
+                  <p>* Creacion de aplicacion movil</p>
+                </div>
+
+                <div class="absolute bottom-0 flex justify-center w-full">
+                  <button
+                    onclick="location.href='./src/menu/menuTecnologiaCampaña.html'"
+                    class="text-lg font-medium text-gray-100 border border-white rounded-full px-3 py-1 mb-5"
+                  >
+                    Leer más...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="card">
+              <div class="content relative h-full">
+                <h1
+                  class="text-center mb-10 uppercase text-3xl font-bold pt-5 text-[#8A0026]"
+                >
+                  Equipo de computo y abquisicion de tecnologia
+                </h1>
+                <div class="text-start text-lg text-gray-100 font-medium px-5">
+                  <p>* Computo</p>
+                  <p>* Cable Ethernet</p>
+                  <p>* Switch</p>
+                  <p>* Firewalls</p>
+                  <p>* Escritorios</p>
+                </div>
+
+                <div class="absolute bottom-0 flex justify-center w-full">
+                  <button
+                    onclick="location.href='./src/menu/menuEquipoComputo.html'"
+                    class="text-lg font-medium text-gray-100 border border-white rounded-full px-3 py-1 mb-5"
+                  >
+                    Leer más...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev text-white"></div>
+      <div class="swiper-button-next text-white"></div>
+    </div>
+
+    <!-- swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        //cuantas quieres ver
+        slidesPerView: 1,
+        grid: {
+          //num de filas
+          rows: 0,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1536: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+
+    <!-- Script externo -->
+    <script src="./js/script.js"></script>
+
+    <!-- 3D -->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+
+    <!-- PARTICLES -->
+    <script src="./js/particles.min.js"></script>
+    <script>
+      particlesJS({
+        particles: {
+          number: {
+            value: 85,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 11.22388442605866,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "window",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: false,
+              mode: "pull",
+            },
+            resize: false,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>

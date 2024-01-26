@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/oswald-4');
+*{
+  font-family: 'Oswald', sans-serif;
+}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .carde {
+    color: #fff;
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  .image {
+    display: none;
+  }
+
+  /* REPONSIVE SM */
+  @media (min-width: 640px) {
+    .carde {
+      color: #fff;
+      margin: 1rem 1rem 0 1rem;
+    }
+  }
+  /* RESPONSIVE LG */
+  @media (min-width: 1024px) {
+    #color-vino {
+      font-size: 4rem;
+    }
+    .image {
+      display: flex;
+    }
+    .carde {
+      margin-top: 4rem;
+      position: relative;
+      width: 100%;
+      display: flex;
+      /*background: linear-gradient(140deg, #680202, #ffffff);*/
+    }
+    .carde img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 500px;
+      transition: 0.5s;
+    }
+    .carde:hover img {
+      left: 73%;
+      top: 1.5rem;
+      height: 340px;
+    }
+    .carde .content {
+      position: relative;
+      width: 50%;
+      left: 10%;
+      padding: 20px 20px 20px 40px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+    }
+    .carde:hover .content {
+      opacity: 1;
+      visibility: visible;
+      left: 0%;
+    }
+    .carde .content h2 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3.5em;
+      line-height: 1em;
+    }
+    .carde .content a {
+      position: relative;
+      display: inline-block;
+      color: #111;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #fff;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+  }
+
+  /* REPONSIVE XL  */
+  @media (min-width: 1280px) {
+    .carde {
+      margin: 5rem 0;
+    }
+    .carde img {
+      top: 2rem;
+      bottom: 0;
+      left: 50%;
+      height: 600px;
+    }
+    .carde:hover img {
+      height: 450px;
+    }
+  }
+
+  /* REPONSIVE XL  */
+  @media (min-width: 1536px) {
+    .carde {
+      margin: 5rem 0;
+    }
+    .carde img {
+      top: 2rem;
+      bottom: 0;
+      left: 50%;
+      height: 600px;
+    }
+    .carde:hover img {
+      left: 70%;
+      height: 450px;
+    }
+  }
