@@ -52,3 +52,14 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   var menu = document.getElementById("mobile-menu-2");
   menu.classList.toggle("hidden");
 });
+
+window.onload = function () {
+  setTimeout(function () {
+    var card = document.querySelector(".carde");
+    if (card) card.classList.add("animate");
+  }, 200); // Cambia la tarjeta después de 2 segundos
+  setTimeout(function () {
+    var card = document.querySelector(".content");
+    if (card) card.classList.add("tracking-in-expand-forward-top");
+  }, 200); // Cambia la tarjeta después de 2 segundos
+};
