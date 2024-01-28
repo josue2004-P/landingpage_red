@@ -99,3 +99,7 @@ body {
 .icon-tabler-arrow-right {
   fill: red;
 }
+
+.activado{
+  background-color: black;
+}
