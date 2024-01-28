@@ -85,13 +85,13 @@
   /* REPONSIVE XL  */
   @media (min-width: 1280px) {
     .carde {
-      margin: 5rem 0;
+      margin: 0rem 0;
     }
     .carde img {
       top: 2rem;
       bottom: 0;
       left: 50%;
-      height: 600px;
+      height: 500px;
     }
     .carde:hover img {
       height: 450px;
