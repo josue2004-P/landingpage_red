@@ -51,17 +51,25 @@ function consoleText(words, id, colors) {
 document.getElementById("toggleButton").addEventListener("click", function () {
   var menu = document.getElementById("mobile-menu-2");
   var nav = document.getElementById("nav");
-  if(nav)  nav.classList.toggle("activado")
+  if(nav) nav.classList.toggle("activado")
   menu.classList.toggle("hidden");
-});
+ });
+ 
+ // Close the navigation bar when clicking outside of it
+ document.addEventListener('click', function(event) {
+     var clickover = event.target;
+     var mobileMenu = document.getElementById("mobile-menu-2");
+     var toggleButton = document.getElementById("toggleButton");
+     var _opened = mobileMenu.classList.contains("hidden");
+     if (!clickover.closest('#toggleButton') && !clickover.closest('#mobile-menu-2') && _opened === false) {
+         toggleButton.click();
+     }
+ });
+ 
 
 window.onload = function () {
   setTimeout(function () {
     var card = document.querySelector(".carde");
     if (card) card.classList.add("animate");
-  }, 2000); // Cambia la tarjeta después de 2 segundos
-  setTimeout(function () {
-    var card = document.querySelector(".content");
-    if (card) card.classList.add("tracking-in-expand-forward-top");
   }, 2000); // Cambia la tarjeta después de 2 segundos
 };
