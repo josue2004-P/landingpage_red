@@ -51,7 +51,7 @@ function consoleText(words, id, colors) {
 document.getElementById("toggleButton").addEventListener("click", function () {
   var menu = document.getElementById("mobile-menu-2");
   var nav = document.getElementById("nav");
-  nav.classList.toggle("activado")
+  if(nav)  nav.classList.toggle("activado")
   menu.classList.toggle("hidden");
 });
 

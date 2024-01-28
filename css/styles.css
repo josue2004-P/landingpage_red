@@ -40,7 +40,7 @@ body {
   width: 270px;
   height: 450px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
   box-shadow: 0 0 0 0px, 0 5px 20px #fff;
@@ -106,4 +106,9 @@ body {
 
 #particles-js{
   background-color: black;
+}
+
+#navText{
+
+  color: #8a0026;
 }
