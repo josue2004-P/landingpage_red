@@ -103,3 +103,7 @@ body {
 .activado{
   background-color: black;
 }
+
+#particles-js{
+  background-color: black;
+}
