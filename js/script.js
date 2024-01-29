@@ -53,6 +53,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   var nav = document.getElementById("nav");
   if(nav) nav.classList.toggle("activado")
   menu.classList.toggle("hidden");
+  menu.classList.toggle("backdrop-blur-[4px]");
  });
  
  // Close the navigation bar when clicking outside of it

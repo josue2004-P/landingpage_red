@@ -4,7 +4,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-
 }
 
 .console-text {
@@ -49,7 +48,6 @@ body {
   backdrop-filter: blur(5px);
 }
 .container .card .content {
-
   transform: translateY(100px);
   opacity: 0;
   transition: 0.5s;
@@ -100,15 +98,41 @@ body {
   fill: red;
 }
 
-.activado{
+.activado {
   background-color: black;
 }
 
-#particles-js{
+#particles-js {
   background-color: black;
 }
 
-#navText{
-
+#navText {
   color: #8a0026;
+}
+
+/* GRADIENTES */
+
+#gradient {
+  background: #8a0026; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #190a05,
+    #8a0026
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #190a05,
+    #8a0026
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#about {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.6)),
+    url("https://cdn.pixabay.com/photo/2018/01/20/14/26/skyscraper-3094696_1280.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
