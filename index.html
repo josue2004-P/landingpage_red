@@ -10,136 +10,916 @@
     <link rel="stylesheet" href="./css/styleHome.css" />
   </head>
 
-  <body class="bg-[#8a0026] h-[calc(100dvh)]">
-    <div class="w-full h-full bg-black" transition-style="in:circle:top-right">
-      <header>
-        <nav class="bg-black px-4 lg:px-6 py-2.5 relative">
-          <div
-            class="flex flex-wrap justify-between flex-row-reverse lg:flex-row items-center"
-          >
-            <div class="flex items-center lg:order-2">
-              <button
-                id="toggleButton"
-                data-collapse-toggle="mobile-menu-2"
-                type="button"
-                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <svg
-                  class="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div class="">
-              <!-- typing -->
-              <div class="w-20">
-                <div class="logo console-text h-10 flex">
-                  <span class="text-3xl" id="text"></span>
-                  <div class="console-underscore" id="console">&#95;</div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="hidden absolute z-20 lg:static top-0 left-0 mt-14 lg:border-none border-b border-white lg:mt-0 bg-black justify-between uppercase text-2xl items-center w-full lg:flex lg:w-auto lg:order-1"
-              id="mobile-menu-2"
-            >
-              <ul
-                class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
-              >
-                <li>
-                  <a
-                    href="index.html"
-                    class="block py-2 text-[#8a0026] pr-4 pl-3  lg:p-0"
-                    >Inicio</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="servicios.html"
-                    class="block py-2 text-gray-400 hover:text-[#8a0026] pr-4 pl-3  lg:p-0"
-                    >Servicios</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="block py-2 text-gray-400 hover:text-[#8a0026] pr-4 pl-3  lg:p-0"
-                    >Nosotros</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="block py-2 text-gray-400 hover:text-[#8a0026] pr-4 pl-3  lg:p-0"
-                    >Contactanos</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <body class="">
+    
+    <main class="bg-[#8a0026] h-[calc(100dvh)]">
 
-      <div class="2xl:mt-10 p-10">
-        <div class="carde">
-          <div class="content uppercase">
-            <div class="flex justify-center">
-              <div class="whitespace-nowrap">
-                <p class="text-4xl sm:text-6xl xl:text-6xl">TU</p>
-                <p
-                  class="text-7xl sm:text-[7.5rem] lg:text-[6.5rem] 2xl:text-[8rem] font-extrabold text-[#8a0026]"
+      <div class="w-full h-full bg-black" transition-style="in:circle:top-right">
+        <header>
+          <nav class="bg-black px-4 lg:px-6 py-2.5 relative">
+            <div
+              class="flex flex-wrap justify-between flex-row-reverse lg:flex-row items-center"
+            >
+              <div class="flex items-center lg:order-2">
+                <button
+                  id="toggleButton"
+                  data-collapse-toggle="mobile-menu-2"
+                  type="button"
+                  class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  aria-controls="mobile-menu-2"
+                  aria-expanded="false"
                 >
-                  CAMPAÑA
-                </p>
-                <p
-                  class="text-4xl sm:text-6xl lg:text-[3.3rem] 2xl:text-[4rem]"
-                >
-                  A UN NIVEL SUPERIOR
-                </p>
-                <div class="flex items-start gap-2">
-                  <p class="text-4xl sm:text-6xl xl:text-6xl">DE</p>
-                  <p
-                    class="font-extrabold text-[3.2rem] sm:text-[5.6rem] lg:text-[4.8rem] 2xl:text-[5.8rem] text-[#8a0026]"
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    SEGURIDAD
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="hidden w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="">
+                <!-- typing -->
+                <div class="w-20">
+                  <div class="logo console-text h-10 flex">
+                    <span class="text-3xl" id="text"></span>
+                    <div class="console-underscore" id="console">&#95;</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden absolute z-20 lg:static top-0 left-0 mt-14 lg:border-none border-b border-white lg:mt-0 bg-black justify-between uppercase text-2xl items-center w-full lg:flex lg:w-auto lg:order-1"
+                id="mobile-menu-2"
+              >
+                <ul
+                  class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+                >
+                  <li>
+                    <a
+                      href="index.html"
+                      class="block py-2 text-[#8a0026] pr-4 pl-3  lg:p-0"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="servicios.html"
+                      class="block py-2 text-gray-400 hover:text-[#8a0026] pr-4 pl-3  lg:p-0"
+                      >Servicios</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="block py-2 text-gray-400 hover:text-[#8a0026] pr-4 pl-3  lg:p-0"
+                      >Nosotros</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="block py-2 text-gray-400 hover:text-[#8a0026] pr-4 pl-3  lg:p-0"
+                      >Contactanos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+  
+        <div class="2xl:mt-10 p-10">
+          <div class="carde">
+            <div class="content uppercase">
+              <div class="flex justify-center">
+                <div class="whitespace-nowrap">
+                  <p class="text-4xl sm:text-6xl xl:text-6xl">TU</p>
+                  <p
+                    class="text-7xl sm:text-[7.5rem] lg:text-[6.5rem] 2xl:text-[8rem] font-extrabold text-[#8a0026]"
+                  >
+                    CAMPAÑA
                   </p>
+                  <p
+                    class="text-4xl sm:text-6xl lg:text-[3.3rem] 2xl:text-[4rem]"
+                  >
+                    A UN NIVEL SUPERIOR
+                  </p>
+                  <div class="flex items-start gap-2">
+                    <p class="text-4xl sm:text-6xl xl:text-6xl">DE</p>
+                    <p
+                      class="font-extrabold text-[3.2rem] sm:text-[5.6rem] lg:text-[4.8rem] 2xl:text-[5.8rem] text-[#8a0026]"
+                    >
+                      SEGURIDAD
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="image">
+              <img src="./IMAGENES/1.png" />
+            </div>
           </div>
-          <div class="image">
-            <img src="./IMAGENES/1.png" />
+        </div>
+  
+      </div>
+    </main>
+
+    <!-- introduccion -->
+    <section
+    class="w-full flex justify-center my-[3rem] lg:my-[10rem] lg:p-10"
+    id="home2"
+  >
+    <div class="">
+      <div class="flex justify-center ">
+        <p class="text-gray-100 text-center text-xl sm:text-2xl pt-5  lg:text-2xl font-bold  mt-4 w-11/12  2xl:w-8/12">
+          En un mundo cada vez más conectado y dependiente de la tecnología,
+          la integridad de las elecciones y la confianza en los procesos
+          democráticos se han vuelto fundamentales. Es en este contexto que
+          nace CertusHack, una empresa comprometida con la salvaguarda de la
+          democracia y la transparencia en los procesos electorales a través
+          de servicios especializados en ciberseguridad.
+        </p>
+      </div>
+      <div class="mt-5 lg:mt-10 flex justify-center">
+        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-100   bg-gradient-to-br from-[#8A0026] to-[#000000]">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-85 bg-black  hover:bg-black">
+            Conoce Mas...
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+    <!-- SERVICES -->
+    <section class="mb-10 ">
+      <div class="flex justify-center py-10 mb-10">
+        <div class="text-center">
+          <div class="flex justify-center">
+            <h1 class="text-5xl font-extrabold text-gray-100">Servicios</h1>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-gray-400 mt-5 w-10/12 lg:w-8/12 text-xl">
+              Nuestra experiencia abarca la identificación y mitigación de
+              amenazas de hacking, garantizando la integridad de la información
+              crítica y la protección de la privacidad en el contexto electoral.
+            </p>
           </div>
         </div>
       </div>
+      <div class="flex w-full h-full items-center ">
+        <div class="flex w-full  h-full justify-center items-center ">
+          <div class="grid md:grid-cols-2 min-[1121px]:grid-cols-3 gap-y-6 w-full xl:w-[90%] 2xl:w-[90%] ">
 
-      
+            <div class="flex justify-center ">
+              <div
+                id="card1"
+                class="bg-black w-[90%] h-[26rem] relative md:w-[22rem] md:h-[25rem] 2xl:w-[27rem] 2xl:h-[21rem] pr-2"
+              >
+                <div class="text-white pt-6 px-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    class="w-12 h-12"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                    />
+                  </svg>
+                </div>
+                <div class="pl-4 pt-4 ">
+                  <span class="text-gray-100 text-2xl font-extrabold">
+                    Ciberinteligencia en <br />
+                    campaña electoral
+                  </span>
+                </div>
+                <div class="flex items-center text-gray-400 mt-4 ml-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 mr-2 "
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-400 text-lg font-medium">Osint</p>
+                </div>
+                <div class="flex  text-gray-400  ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-lg font-medium">
+                      Investigacion de personas/ redes sociales.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex  text-gray-400  ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-lg font-medium">
+                      Identificaciones falsas de perfiles falsos
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center text-gray-400 ml-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 mr-2 "
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-400 text-lg font-medium">
+                    WhatsApp Init.
+                  </p>
+                </div>
 
-      <!-- Script externo -->
-      <script src="./js/script.js"></script>
+                <div class="w-full  absolute  bottom-[1rem] right-0 flex justify-end items-end mb-4 lg:mb-0 mt-4 pr-4">
+                  <div class="mr-1">
+                    <p class="text-lg text-white font-medium">Learn more</p>
+                  </div>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-[#8A0026]"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center ">
+              <div
+                id="card1"
+          class="bg-black relative w-[90%] h-[26rem] md:w-[22rem] 2xl:w-[27rem]  md:h-[25rem]  2xl:h-[21rem] pr-2"
+              >
+                <div class="text-white pt-6 px-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-12 h-12"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.75 1.5a6.75 6.75 0 00-6.651 7.906c.067.39-.032.717-.221.906l-6.5 6.499a3 3 0 00-.878 2.121v2.818c0 .414.336.75.75.75H6a.75.75 0 00.75-.75v-1.5h1.5A.75.75 0 009 19.5V18h1.5a.75.75 0 00.53-.22l2.658-2.658c.19-.189.517-.288.906-.22A6.75 6.75 0 1015.75 1.5zm0 3a.75.75 0 000 1.5A2.25 2.25 0 0118 8.25a.75.75 0 001.5 0 3.75 3.75 0 00-3.75-3.75z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="pl-4 pt-4 ">
+                  <span class="text-gray-100 text-2xl font-extrabold">
+                    Hacking
+                  </span>
+                </div>
+                <div class="flex items-center text-gray-400 mt-4 ml-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 mr-2 "
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-400 text-lg font-medium">
+                    Ciberespionaje
+                  </p>
+                </div>
+                <div class="flex  text-gray-400  ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-lg font-medium">
+                      Hacking de perfiles de FB/IG/X.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex  text-gray-400  ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-lg font-medium">
+                      Ataques de denegacion de servicio a aplicaciones wed
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center text-gray-400 ml-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 mr-2 "
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-400 text-lg font-medium">
+                    WhatsApp Init.
+                  </p>
+                </div>
+                <div class="w-full absolute  bottom-[1rem] right-0  flex justify-end items-end mb-4 lg:mb-0  mt-4 pr-4">
+                  <div class="mr-1">
+                    <p class="text-lg text-white font-medium">Learn more</p>
+                  </div>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-[#8A0026]"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center ">
+              <div
+                id="card1"
+                class="bg-black relative w-[90%] h-[26rem] md:w-[22rem] 2xl:w-[27rem]  md:h-[25rem]  2xl:h-[21rem] h-[21rem] pr-2"
+              >
+                <div class="text-white pt-6 px-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class ="w-12 h-12"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="p-4 pt-4 ">
+                  <span class="text-gray-100 text-2xl font-extrabold">
+                    Ciberseguridad
+                  </span>
+                </div>
+                <div class="flex items-center text-gray-400 mt-4 ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-gray-400 text-lg font-medium">
+                    Creacion de infraestructura TI
+                  </p>
+                </div>
+                <div class="flex  text-gray-400  ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-lg font-medium">
+                      Proteccion de datos
+                    </p>
+                  </div>
+                </div>
+                <div class="flex  text-gray-400  ml-4">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 mr-2 "
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-400 text-lg font-medium">
+                      Seguridad de sistemas y redesio a aplicaciones wed
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center text-gray-400 ml-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 mr-2 "
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-400 text-lg font-medium">
+                    Seguridad en redes sociales.
+                  </p>
+                </div>
+                <div class="w-full absolute bottom-[1rem] right-0 flex justify-end items-end mb-4 lg:mb-0 mt-4 pr-4">
+                <div class="mr-1">
+                    <p class="text-lg text-white font-medium">Learn more</p>
+                  </div>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-[#8A0026]"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO2 -->
+    <section class="w-full flex justify-center my-[10rem] lg:p-10" id="home2">
+      <div class="">
+        <div class="flex justify-center ">
+          <p class="text-gray-300 text-center text-xl sm:text-2xl md:text-4xl lg:text-5 xl font-bold  my-12 w-11/12 sm:w-10/12  2xl:w-8/12">
+            Adoptamos soluciones tecnológicas innovadoras para anticiparnos a
+            las amenazas emergentes y proteger la democracia de manera
+            proactiva.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIO 1 -->
+    <section class="mt-20">
+      <div class="grid max-w-screen-lg px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1 class="max-w-2xl mb-4 text-4xl text-transparent bg-clip-text bg-gradient-to-r to-[#8A0026] from-[#800020] font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-100 ">
+            OSINT (OPEN SOURCE INTELLIGENCE)
+          </h1>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
+            Recopilacion de informacion sobre el perfil democratico de los
+            votantes en una region determinada utilizando datos publicos,
+            encuestas y registros electorales.
+          </p>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+            alt="mockup"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIO 2 -->
+    <section class="">
+      <div class="grid max-w-screen-lg px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+            alt="mockup"
+          />
+        </div>
+        <div class="lg:ml-4 place-self-center lg:col-span-7">
+          <h1 class="max-w-2xl mb-4 text-4xl text-transparent bg-clip-text bg-gradient-to-r to-[#8A0026] from-[#800020] font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-100 ">
+            CIBERESPIONAJE
+          </h1>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
+            El Ciberespionaje es la practica de obtener informacion confidencial
+            sin consentimiento alguno. Puede incluir acceso no autorizado a
+            sistemas o redes para recopilar informacion valiosa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIO 3 -->
+    <section class="">
+      <div class="grid max-w-screen-lg px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1 class="max-w-2xl mb-4 text-4xl text-transparent bg-clip-text bg-gradient-to-r to-[#8A0026] from-[#800020] font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-100 ">
+            CREACION DE INFRAESTRUCTURA T.I.
+          </h1>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
+            Establecer una infraestructura solida y segura que incluya
+            servidores, redes y sistemas de almacenamiento para respaldar las
+            operaciones de la campaña.
+          </p>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+            alt="mockup"
+          />
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- ABOUT -->
+    <div id="about" class="flex  items-center my-[5rem]">
+      <div class="p-10">
+        <h1 class="text-gray-100 font-extrabold text-4xl">About Us</h1>
+        <p class="text-gray-400 sm:w-1/2 mt-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          debitis, doloribus vero quaerat quasi praesentium laborum molestiae
+          esse est eligendi amet consectetur, possimus illo dolorem nostrum
+          aliquid quibusdam quos odio!
+        </p>
+      </div>
     </div>
+    <!-- SECTION DOS -->
+    <div class="  w-full flex justify-center my-[10rem] relative">      
+      <span class="item4"></span>
+      <span class="item5"></span>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-[6rem]">
+        <div class="flex justify-center rounded-xl" id="home1">
+          <div class="w-[13rem] h-[11rem] ">
+            <div class="flex justify-center  p-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="50"
+                width="50"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M144 16c0-8.8-7.2-16-16-16s-16 7.2-16 16V32H96c-8.8 0-16 7.2-16 16s7.2 16 16 16h16V96H60.2C49.1 96 40 105.1 40 116.2c0 2.5 .5 4.9 1.3 7.3L73.8 208H72c-13.3 0-24 10.7-24 24s10.7 24 24 24h4L60 384H196L180 256h4c13.3 0 24-10.7 24-24s-10.7-24-24-24h-1.8l32.5-84.5c.9-2.3 1.3-4.8 1.3-7.3c0-11.2-9.1-20.2-20.2-20.2H144V64h16c8.8 0 16-7.2 16-16s-7.2-16-16-16H144V16zM48 416L4.8 473.6C1.7 477.8 0 482.8 0 488c0 13.3 10.7 24 24 24H232c13.3 0 24-10.7 24-24c0-5.2-1.7-10.2-4.8-14.4L208 416H48zm288 0l-43.2 57.6c-3.1 4.2-4.8 9.2-4.8 14.4c0 13.3 10.7 24 24 24H488c13.3 0 24-10.7 24-24c0-5.2-1.7-10.2-4.8-14.4L464 416H336zM304 208v51.9c0 7.8 2.8 15.3 8 21.1L339.2 312 337 384H462.5l-3.3-72 28.3-30.8c5.4-5.9 8.5-13.6 8.5-21.7V208c0-8.8-7.2-16-16-16H464c-8.8 0-16 7.2-16 16v16H424V208c0-8.8-7.2-16-16-16H392c-8.8 0-16 7.2-16 16v16H352V208c0-8.8-7.2-16-16-16H320c-8.8 0-16 7.2-16 16zm80 96c0-8.8 7.2-16 16-16s16 7.2 16 16v32H384V304z"
+                />
+              </svg>
+            </div>
+            <div class="flex justify-center">
+              <h1 class="text-2xl text-center font-extrabold text-gray-100">
+                Estrategias Solidas
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center rounded-xl" id="home1">
+          <div class="w-[13rem] h-[11rem]">
+            <div class="flex justify-center p-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                class="w-[50px] h-[50px] text-gray-100"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                />
+              </svg>
+            </div>
+            <div class="flex justify-center">
+              <h1 class="text-2xl text-center font-extrabold text-gray-100">Proteccion de imagen</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center rounded-xl" id="home1">
+          <div class=" w-[13rem] h-[11rem] ">
+            <div class="flex justify-center p-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-[50px] h-[50px] text-gray-100"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex justify-center">
+              <h1 class="text-2xl text-center font-extrabold text-gray-100">Seguridad Garantizada</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACTANOS -->
+    <div class="skill_title text-center text-gray-100 mb-20" id="contact">
+      <h1 class="text-4xl font-bold">Contactanos</h1>
+    </div>
+
+    <section class="contact mb-20  ">
+      <div class="lg:flex justify-center">
+        <div class="flex justify-center ">
+
+          <form class=" min-[400px]:w-[20rem] ">
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-100 dark:text-white"
+              >
+                Your email
+              </label>
+              <input
+                type="email"
+                id="email"
+                class=" bg-black border border-[#8a0026] text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                placeholder="name@email.com"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-100"
+              >
+                Name
+              </label>
+              <input
+                type="password"
+                placeholder="name"
+                id="password"
+                class=" bg-black border border-[#8a0026] text-gray-500 text-sm rounded-lg block w-full p-2.5 "
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-100"
+              >
+                Your message
+              </label>
+              <textarea
+                id="message"
+                rows="4"
+                class=" bg-black border border-[#8a0026] text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                placeholder="Leave a comment..."
+              ></textarea>
+            </div>
+
+            <div className="mt-5 lg:mt-10 flex justify-center">
+              <button className="relative inline-flex items-center rounded-lg justify-center p-0.5 mb-1 me-1 overflow-hidden text-sm font-medium text-gray-100   bg-gradient-to-br from-[#8A0026] to-[#000000]">
+                <span className="relative px-4 py-1 rounded-md transition-all ease-in duration-85 bg-black  hover:bg-black">
+                  Enviar
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="lg:ml-16 mt-10 lg:mt-0">
+          <div class="text-center mb-10">
+            <div class="flex justify-center">
+              <p class="rounded p-2 border border-[#8a0026] mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 text-gray-100"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div>
+              <p class="mb-1 text-xl font-bold text-gray-100 tracking-tight">
+                Celular:
+              </p>
+              <p class="text-sm tracking-tight text-gray-500"></p>
+            </div>
+          </div>
+
+          <div class="text-center mb-10">
+            <div class="flex justify-center">
+              <p class="rounded rounded p-2 border border-[#8a0026] rounded-md mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 text-white"
+                >
+                  <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                  <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                </svg>
+              </p>
+            </div>
+            <div>
+              <p class="mb-1 text-xl text-gray-100 font-bold tracking-tight">
+                Correo:
+              </p>
+              <p class="text-sm tracking-tight text-gray-500"></p>
+            </div>
+          </div>
+          <div class="text-center mb-10">
+            <div class="flex justify-center">
+              <p class="border border-[#8a0026] p-2 rounded-md mb-4 ">  
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  className=""
+                >
+                  <path fill="#ffffff" d="M17,3H7C4.791,3,3,4.791,3,7v10c0,2.209,1.791,4,4,4h5.621v-6.961h-2.343v-2.725h2.343V9.309 c0-2.324,1.421-3.591,3.495-3.591c0.699-0.002,1.397,0.034,2.092,0.105v2.43h-1.428c-1.13,0-1.35,0.534-1.35,1.322v1.735h2.7 l-0.351,2.725h-2.365V21H17c2.209,0,4-1.791,4-4V7C21,4.791,19.209,3,17,3z" />
+                </svg>
+              </p>
+            </div>
+            <div>
+              <p class="mb-1 text-xl font-bold text-gray-100  tracking-tight">
+                Facebook:
+              </p>
+              <p class="text-sm tracking-tight text-gray-500"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class=" w-full" id="home2">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+           <a
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <!-- <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            /> -->
+            <span class="self-center text-gray-100 text-2xl font-semibold whitespace-nowrap ">
+              CerTusHack
+            </span>
+          </a> 
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-100 sm:mb-0 ">
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">
+                Licensing
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+        <span class="block text-sm sm:text-center text-gray-100">
+          © 2023
+          <a href="" class="hover:underline">
+            CertusHack
+          </a>
+          . All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+
+
+
+        <!-- Script externo -->
+        <script src="./js/script.js"></script>
   </body>
 </html>
+
