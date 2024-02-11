@@ -253,6 +253,37 @@ span.item5{
   z-index:-1 ;
 }
 
+span.item1{
+  position: absolute;
+  bottom: -5rem;
+  left: 5rem;
+  width: 15rem;
+  height: 10rem;
+  transform: rotate(30deg) skewX(-12deg);
+  border-radius: 6rem;
+  background:#8a0026;
+  filter: blur(3.5rem);
+  opacity: 0.8; 
+  display: block; 
+  z-index:-1 ;
+}
+
+
+span.item2{
+  position: absolute;
+  top: 0rem;
+  right: 30%;
+  width: 12rem;
+  height: 12rem;
+  transform: rotate(60deg) skewX(-12deg);
+  border-radius: 6rem;
+  background:#8a0026;
+  filter: blur(3.5rem);
+  opacity: 0.8; 
+  display: block; 
+  z-index:-1 ;
+}
+
 
 
 
