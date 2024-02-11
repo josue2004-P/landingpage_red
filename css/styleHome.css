@@ -195,13 +195,26 @@ body {
 #card1 {
   float: left;
   box-sizing: border-box;
-  border: 1px solid transparent;
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-  background-image: linear-gradient(#000000, #000000),
-    linear-gradient(#8a0026, #8a0026);
-  border-radius: 1rem;
+  border:  1px solid transparent;
+  border-color: #8a0026;
+  border-radius:  0.75rem;
+  position: relative; /* Added to allow positioning of pseudo-elements */
 }
+
+#card1::before {
+  content: "";
+  position: absolute;
+  top:  0;
+  left:  0;
+  right:  0;
+  bottom:  0;
+  z-index: -1; /* Ensure the blurred layer is behind the content */
+  background: inherit; /* Use the same background as the parent */
+  filter: blur(10px); /* Adjust the blur amount as needed */
+}
+
+
+
 
 #about {
   width: 100%;
@@ -283,6 +296,55 @@ span.item2{
   display: block; 
   z-index:-1 ;
 }
+
+span.item3{
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  width: 7.5rem;
+  height: 7.5rem;
+  transform: rotate(60deg) skewX(-12deg);
+  border-radius: 6rem;
+  background:#8a0026;
+  filter: blur(4.5rem);
+  opacity: 0.8; 
+  display: none; 
+  z-index:-1 ;
+}
+
+span.item6{
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 11rem;
+  height: 6rem;
+  transform: rotate(-20deg) skewX(-12deg);
+  border-radius: 6rem;
+  background:#8a0026;
+   filter: blur(4.5rem); 
+  opacity: 0.8; 
+  display: block; 
+  z-index:-1 ;
+}
+
+@media (min-width: 640px) {
+  
+  span.item3{
+    left: 70%;
+    width: 15rem;
+    height: 15rem;
+    filter: blur(7.5rem); 
+    display: block; 
+  }
+  span.item6{
+    left: 0rem;
+    width: 22rem;
+    height: 12rem;
+    filter: blur(7.5rem); 
+  }
+
+ }
+
 
 
 
