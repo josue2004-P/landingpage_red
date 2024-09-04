@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])
-consoleText(["CertusHack"], "text", ["#8A0026", "#FFFFFF", "#FFD700"]);
+consoleText(["consectetur"], "text", ["#8A0026", "#FFFFFF", "#FFD700"]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ["#fff"];
